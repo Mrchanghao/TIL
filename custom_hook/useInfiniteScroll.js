@@ -30,3 +30,5 @@ const useInfiniteScroll = (callback) => {
 };
 
 export default useInfiniteScroll;
+
+Array.from(Array(5).keys())
