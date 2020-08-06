@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+<!--
+
+-->
+  
+  <style>
+    body {
+      margin: 0;
+    }
+    
+    .container {
+      height: 100vh;
+      background-size: cover;
+      background-attachment: fixed;
+      font-size: 1.5rem;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+    }
+    
+    .one {
+      background-image: url(img/heic0910e.jpg);
+    }
+    
+    .two {
+      background-image: url(img/heic1501a.jpg);
+    }
+    
+    .three {
+      background-image: url(img/heic1608a.jpg);
+    }
+    .container .wrapper{
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      
+    }
+    .container .wrapper{
+      border:1px solid red;
+    }
+    .container header {
+      color: white;
+      max-width: 70%;
+    }
+    
+    .container header h1 {
+      font-weight: 200;
+    }
+    
+    .container header h1:after {
+      content: '';
+      width: 20rem;
+      border-bottom: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+</section>
+  <section class="container one" data-scrollax-parent="true">
+   <div class="wrapper" data-scrollax="properties:{opacity:1}">
+     <header>
+      <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo delectus et exercitationem fuga molestiae.
+    </header>
+   </div>
+  </section>
+  <section class="container two" data-scrollax-parent="true">
+   <div class="wrapper" data-scrollax="properties:{opacity:1, transform: 'scale(1,1)'}">
+    <header />
+    </div>
+  </section>
+  <section class="container three">
+    <header>
+      <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illo delectus et exercitationem fuga molestiae.
+    </header>
+  </section>
+    <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="scrollax.js"></script>
+
+  
+  <script>
+      
+    jQuery(document).ready(function ($) {
+      'use strict';
+      $.Scrollax();
+    });
+  </script>
+</body>
+
+</html>
