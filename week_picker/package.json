@@ -1,0 +1,30 @@
+{
+  "name": "week_picker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "@wojtekmaj/react-daterange-picker": "^3.0.0",
+    "classnames": "^2.2.6",
+    "get-user-locale": "^1.2.0",
+    "make-event-props": "^1.1.0",
+    "merge-class-names": "^1.1.1",
+    "moment": "^2.27.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-calendar": "^3.0.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.13.1",
+    "react-fit": "^1.0.3",
+    "react-with-styles": "^4.1.0",
+    "react-with-styles-interface-aphrodite": "^6.0.1",
+    "update-input-width": "^1.1.1"
+  }
+}
