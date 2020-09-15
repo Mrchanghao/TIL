@@ -23,6 +23,7 @@
     "react-dates": "^21.8.0",
     "react-dom": "^16.13.1",
     "react-fit": "^1.0.3",
+    "react-image-crop": "^8.6.5",
     "react-with-styles": "^4.1.0",
     "react-with-styles-interface-aphrodite": "^6.0.1",
     "update-input-width": "^1.1.1"
