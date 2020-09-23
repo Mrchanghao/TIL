@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="history">Mutation Observer Undo/Redo</div>
+  <div class="options">
+    <button id='undo' onclick='undo()' class="disabled red">Undo</button>
+    <div contenteditable="" class="editContent"></div>
+    <button id='redo' onclick='redo()' class="disabled">Redo</button>
+  </div>
+  <button class="add disabled" onclick='add()'>ADD</button>
+  <ol></ol>
+  <div>
+    <button class="connect">Connect</button>
+    <button onclick="disconnect()" class="disconnect red disabled">Disconnect</button>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
