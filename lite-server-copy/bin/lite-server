@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+'use strict';
+
+process.title = 'lite-server';
+
+require('../lib/lite-server')();

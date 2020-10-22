@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>intersection observer api</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section {
+      background-color: black;
+      color: aliceblue;
+      width: 100%;
+      margin: 0;
+      height: 400vh;
+    }
+    .container {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    background-color: lightgrey;
+    overflow-y: auto;
+  }
+
+.listElement {
+  flex-shrink: 0;
+  height: 90%;
+  width: 200px;
+  margin: 10px;
+}
+
+.toggle {
+  background-color: gold;
+}
+
+  </style>
+
+</head>
+<body>
+  
+  <section >
+    <h1>hi ro</h1>
+    <div class="container">
+      
+      <div class="listElement" style="background-color: blue;"></div>
+      <div class="listElement" style="background-color: aqua;"></div>
+      <div class="listElement" style="background-color: brown;"></div>
+      <div class="listElement" style="background-color: blueviolet;"></div>
+      <div class="listElement" style="background-color: chocolate;"></div>
+      <div class="listElement" style="background-color: azure;"></div>
+      <div class="listElement" style="background-color: cornflowerblue;"></div>
+      <div class="listElement" style="background-color: rgb(37, 39, 43);"></div>
+      <div class="listElement" style="background-color: rgb(39, 190, 183);"></div>
+      <div class="listElement" style="background-color: rgb(237, 100, 134);"></div>
+    </div>
+
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "lite-server-copy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "lite-server": "./bin/lite-server"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "connect-logger": "^0.0.1",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5"
+  }
+}
