@@ -5,35 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>intersection observer api</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    section {
-      background-color: black;
-      color: aliceblue;
-      width: 100%;
-      margin: 0;
-      height: 400vh;
-    }
-    .container {
-    width: 800px;
-    height: 200px;
-    display: flex;
-    background-color: lightgrey;
-    overflow-y: auto;
-  }
-
-.listElement {
-  flex-shrink: 0;
-  height: 90%;
-  width: 200px;
-  margin: 10px;
+    body {
+  height: 100vh;
+  margin: 0;
+  background: #212933;
+  color: #738BAA;
+  font-family: 'Nunito';
 }
 
-.toggle {
-  background-color: gold;
+section {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+.content .left {
+  position: relative;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.content .left p {
+  background: white;
+  position: absolute;
+  margin-top: -25%;
+  right: 17%;
+  color: black;
+  padding: 1em;
+  border-radius: 15px;
+  width: 20vw;
+  text-align: left;
+}
+.content .yellow {
+  width: 50%;
+  opacity: 0;
+}
+.content .squig {
+  position: absolute;
+  margin-top: 32%;
+  left: 19%;
+  width: 8vw;
+}
+.content .right {
+  display: grid;
+  place-items: center;
+}
+.content .right h2 {
+  color: white;
+  font-size: 1.7rem;
+}
+.content .right p {
+  line-height: 1.6em;
+}
+
+.anim {
+  opacity: 0;
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
   </style>
@@ -41,21 +82,23 @@
 </head>
 <body>
   
-  <section >
-    <h1>hi ro</h1>
-    <div class="container">
-      
-      <div class="listElement" style="background-color: blue;"></div>
-      <div class="listElement" style="background-color: aqua;"></div>
-      <div class="listElement" style="background-color: brown;"></div>
-      <div class="listElement" style="background-color: blueviolet;"></div>
-      <div class="listElement" style="background-color: chocolate;"></div>
-      <div class="listElement" style="background-color: azure;"></div>
-      <div class="listElement" style="background-color: cornflowerblue;"></div>
-      <div class="listElement" style="background-color: rgb(37, 39, 43);"></div>
-      <div class="listElement" style="background-color: rgb(39, 190, 183);"></div>
-      <div class="listElement" style="background-color: rgb(237, 100, 134);"></div>
-    </div>
+  <section>
+    <h1>scroll down!</h1>
+  </section>
+  <section class="content">
+
+      <div class="left">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/yellow.jpg" alt="yellow" class="yellow anim" data-delay="0s">
+          <p class="anim" data-delay=".5s">I have no clue what I'm doing here LOL!</p>
+          <img class="squig" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/squiggly.svg" alt="squig" class="squig anim" data-delay=".7s">
+
+      </div>
+      <div class="right">
+          <div class="anim" data-delay="1s">
+              <h2>Get Yellow</h2>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit</p>
+          </div>
+      </div>
 
   </section>
 

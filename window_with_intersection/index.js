@@ -22,39 +22,56 @@ target 이 root엘리먼트의 바운드 안에 있을 때는 isIntersection = t
 target 이 root엘리먼트의 바운드 밖에 있을 때 isIntersection = false;
 */
 
-const element = document.querySelectorAll('.listElement');
-const container = document.querySelector('.container');
+// const element = document.querySelectorAll('.listElement');
+// const container = document.querySelector('.container');
 
-console.log(element)
+// console.log(element)
 
-let toggle = false;
+// let toggle = false;
 
 
-const intersectionCallback = (entries) => {
+// const intersectionCallback = (entries) => {
+//   entries.forEach(entry => {
+//     if(entry.isIntersecting) {
+//       entry.isVisible = true;
+//       entry.target.classList.add('toggle');
+//       // console.log(entry.target.classList  'toggle')
+//       // element is intersecting with the container - render it to the DOM!
+//     } else {
+//       entry.isVisible = false;
+//       // entry.target.classList.remove = 'toggle';
+//       // Element is _NOT_ intersecting with the container - hide it from the DOM.
+//     }
+//   })
+// }
+
+// const intersectionObserver = new IntersectionObserver(intersectionCallback, {
+//   root: container,
+//   rootMargin: '0px',
+//   threshold: 1.0,
+// })
+
+
+
+
+// intersectionObserver.observe(element[4]);
+// intersectionObserver.observe(element[5]);
+
+
+const images = document.querySelectorAll('.anim');
+
+observer = new IntersectionObserver((entries) => {
+  console.log(entries);
   entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.isVisible = true;
-      entry.target.classList.add('toggle');
-      // console.log(entry.target.classList  'toggle')
-      // element is intersecting with the container - render it to the DOM!
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
     } else {
-      entry.isVisible = false;
-      // entry.target.classList.remove = 'toggle';
-      // Element is _NOT_ intersecting with the container - hide it from the DOM.
+      entry.target.style.animation = 'none';
     }
+  
   })
-}
-
-const intersectionObserver = new IntersectionObserver(intersectionCallback, {
-  root: container,
-  rootMargin: '0px',
-  threshold: 1.0,
+ 
+});
+images.forEach(image => {
+  observer.observe(image);
 })
-
-
-
-
-intersectionObserver.observe(element[4]);
-intersectionObserver.observe(element[5]);
-
-
