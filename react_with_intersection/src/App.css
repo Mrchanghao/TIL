@@ -1,0 +1,79 @@
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+ul {
+  margin: 0 auto;
+  max-width: 600px;
+  list-style: none;
+}
+
+li {
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 100px;
+}
+
+
+button {
+  border-radius: 0px;
+  background-color: #bbded6;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+span {
+  display: block;
+  padding: 1rem 0;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1c273c;
+  position: absolute;
+  text-align: center;
+  color: azure;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+  margin: 20px 0;
+}
+
+.photos {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  animation: scale 0.5 linear;
+}
+
+@keyframes scale{
+  from{
+    transform: scale(0.5);
+  }
+}
+.photos img {
+  width: 100%;
+  display: block;
+  max-width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos button {
+  padding: 5px 20px;
+  margin: 20px;
+  height: 50px;
+}
