@@ -297,4 +297,39 @@ const mapProblemEntry = arr => {
       return entity;
     }, {});
 }
-console.log(mapSeriesEntry(mapArr))
+// console.log(mapSeriesEntry(mapArr))
+
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  useEffect(() => {
+    savedCallback.current = callback;
+
+  }, [callback])
+
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+
+    if(delay !== null) {
+      const id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+    return null;
+  }, [delay]);
+}
+// setinterval 대신 커스텀 useInterval을 사용하여 1초에 1씩 count 증가하도록 만든 컴포넌트
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  useInterval(() => {
+    setCount(count + 1);
+  }, 1000)
+
+  return (
+    <h1>{count}</h1>
+  )
+
+}
