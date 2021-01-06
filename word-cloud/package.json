@@ -7,7 +7,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "react": "^16.13.1",
     "react-d3-cloud": "^0.7.0",
     "react-dom": "^16.13.1",
