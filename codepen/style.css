@@ -1,0 +1,64 @@
+#root {
+  margin: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+.icon {
+  height: 40px;
+  line-height: 0.3;
+  overflow: hidden;
+  transform: translate(5px, 18px);
+}
+
+form {
+  position: absolute;
+  background-color: rgba(200,200,200,.2);
+  padding: 20px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 90%;
+  top: 0;
+  left: 0;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+label.inline {
+  flex-direction: row;
+  align-items: center;
+}
+input {
+  margin-bottom: 8px;
+}
+
+.mobile-message {
+  display: none;
+}
+@media only screen and (max-width: 400px) {
+  form > * {
+    display: none;
+  }
+  
+  form > .mobile-message {
+    display: block;
+  }
+}
