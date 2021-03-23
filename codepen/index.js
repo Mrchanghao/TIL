@@ -56,29 +56,6 @@ function animate () {
 }
 
 function drawSpiral(interval) {
-  // ctx.moveTo(xmid, ymid);
-
-  // let spread = 2;
-  // let tick = 0;
-  // for (let i = 0; i < options.dot; i++) {
-  //   x = Math.cos(i) * spread + xmid;
-  //   y = Math.sin(i) * spread + ymid;
-
-  //   ctx.moveTo(x, y);
-  //   ctx.beginPath();
-
-  //   const color = colors[tick % 3];
-  //   ctx.strokeStyle = color;
-  //   ctx.fillStyle = color;
-
-  //   ctx.arc(x, y, options.dotSize, 0, 2 * Math.PI);
-  //   ctx.stroke();
-  //   ctx.fill();
-  //   i += interval;
-
-  //   spread += options.spread;
-  //   tick++;
-  // }
   ctx.moveTo(xmid, ymid);
   let spread = 2;
   let tick = 0;
