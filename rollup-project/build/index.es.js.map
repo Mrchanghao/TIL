@@ -1,0 +1,1 @@
+{"version":3,"file":"index.es.js","sources":["../src/index.ts"],"sourcesContent":["console.log('hi');\n\n\ninterface House {\n  name: string;\n  familyNum: number;\n}\n\n"],"names":[],"mappings":"AAAA,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC"}
