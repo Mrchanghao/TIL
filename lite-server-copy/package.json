@@ -10,6 +10,6 @@
     "browser-sync": "^2.26.13",
     "connect-logger": "^0.0.1",
     "lodash": "^4.17.20",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
